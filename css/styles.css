@@ -51,7 +51,8 @@ ol {
   border-bottom: 1px solid #ececec;
 }
 
-.img {
+.section-activities__img,
+.section-team__img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -568,19 +569,19 @@ ol {
 
 /* Section Чим ми займаємося и h2 наша команда */
 
-.section-work {
+.section-activities {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.work-list {
+.section-activities__list {
   display: flex;
   flex-direction: row;
   margin-left: auto;
   gap: 30px;
 }
 
-.section-title {
+.section-activities__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -593,11 +594,11 @@ ol {
   margin-bottom: 50px;
 }
 
-.item {
+.section-activities__item {
   position: relative;
 }
 
-.work-overlay {
+.section-activities__overlay {
   position: absolute;
   display: flex;
   height: 70px;
@@ -607,7 +608,7 @@ ol {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.text-work-overlay {
+.section-activities__text {
   display: flex;
   font-family: 'Roboto';
   font-weight: 700;
@@ -630,7 +631,7 @@ ol {
   text-align: center;
 }
 
-.title-h2-team {
+.section-team__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -641,14 +642,14 @@ ol {
   margin-bottom: 50px;
 }
 
-.team-list {
+.section-team__list {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   gap: 30px;
 }
 
-.member-team {
+.section-team__member {
   background-color: var(--background-color-primary);
   width: 270px;
   border-radius: 0px 0px 4px 4px;
@@ -656,7 +657,7 @@ ol {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.employee-name {
+.section-team__employee-name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -666,7 +667,7 @@ ol {
   margin: 30px auto 10px auto;
 }
 
-.duty {
+.section-team__duty {
   color: var(--font-family);
   font-size: 16px;
   line-height: 1.19;
@@ -676,19 +677,19 @@ ol {
   margin-bottom: 16px;
 }
 
-.social-icon-container {
+.socials {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
   gap: 10px;
 }
 
-.social-item {
+.socials__item {
   width: 44px;
   height: 44px;
 }
 
-.social-link {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -702,27 +703,27 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover {
+.socials__link:hover {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
 
-.social-link:focus {
+.socials__link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
 
-.social-icon {
+.socials__icon {
   width: 20px;
   height: 20px;
 }
 
-.clients-section {
+.section-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.clients-title {
+.section-clients__title {
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 36px;
@@ -733,12 +734,12 @@ ol {
   margin-bottom: 50px;
 }
 
-.clients-container {
+.section-clients__container {
   display: flex;
   gap: 30px;
 }
 
-.clients-link {
+.section-clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -753,16 +754,16 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-border {
+.section-clients__clients-border {
   display: flex;
 }
 
-.clients-link:hover {
+.section-clients__link:hover {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.clients-link:focus {
+.section-clients__link:focus {
   fill: var(--accent-color);
 }
 
@@ -774,29 +775,17 @@ ol {
   padding-bottom: 60px;
 }
 
-.footer-container {
+.container--footer {
   display: flex;
   align-items: baseline;
 }
 
-.footer-left {
+.footer__footer-left {
   width: 231px;
 }
 
-.logo-footer {
+.logo {
   text-decoration-line: none;
-}
-
-.address {
-  margin-top: 20px;
-}
-
-.address-item {
-  margin-bottom: 9px;
-}
-
-.address-item:last-child {
-  margin-bottom: 0;
 }
 
 .logo__studio-white {
@@ -809,7 +798,19 @@ ol {
   color: var(--white-color);
 }
 
-.address .location {
+.address {
+  margin-top: 20px;
+}
+
+.address__item {
+  margin-bottom: 9px;
+}
+
+.address__item:last-child {
+  margin-bottom: 0;
+}
+
+.address__location {
   color: var(--white-color);
   font-weight: 400;
   font-size: 14px;
@@ -818,8 +819,8 @@ ol {
   font-style: normal;
   text-decoration: none;
 }
-.address-tel,
-.address-mail {
+.address__tel,
+.address__mail {
   color: var(--white-color-60);
   font-weight: 400;
   font-size: 14px;
@@ -829,37 +830,14 @@ ol {
   text-decoration: none;
 }
 
-.footer-right {
+.footer__footer-right {
   display: flex;
   flex-direction: column;
   margin-left: 70px;
 }
 
-.paragraph-footer-right {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-
-  color: #ffffff;
-}
-
-.social-link-footer {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social-icon-footer {
-  fill: #ffffff;
-}
-
-.subscribe-general-block {
-  margin-left: 92px;
-  align-items: center;
-}
-
-.subscribe-title {
+.footer__subtitle,
+.subscribe__subtitle {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -870,15 +848,28 @@ ol {
   margin-bottom: 20px;
 }
 
-.subscribe-form-email {
+.socials--link-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials__icon--footer {
+  fill: var(--white-color);
+}
+
+.subscribe {
+  margin-left: 92px;
+  align-items: center;
+}
+
+.subscribe__form {
   display: flex;
 }
 
-.subscribe-form-email input::placeholder {
+.subscribe__form input::placeholder {
   color: var(--white-color-60);
 }
 
-.email-footer-form {
+.subscribe__email {
   display: inline-block;
   width: 358px;
   padding: 15px 16px;
@@ -892,16 +883,16 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email-footer-form:focus,
-.email-footer-form:hover,
-.subscribe-footer-btn:focus,
-.subscribe-footer-btn:hover {
+.subscribe__email:focus,
+.subscribe__email:hover,
+.subscribe__footer-btn:focus,
+.subscribe__footer-btn:hover {
   outline: none;
   border: 1px solid #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.subscribe-footer-btn {
+.subscribe__footer-btn {
   position: relative;
   width: 200px;
   height: 50px;
@@ -919,21 +910,21 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-btn-pos {
+.subscribe__btn-pos {
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
-.subscribe-btn-text {
+.subscribe__btn-text {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-.send-icon {
+.subscribe__icon {
   fill: var(--white-color);
   margin-left: 10px;
 }
