@@ -51,8 +51,7 @@ ol {
   border-bottom: 1px solid #ececec;
 }
 
-.section-activities__img,
-.section-team__img {
+.img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -73,8 +72,8 @@ ol {
   background-color: var(--background-color-primary);
 }
 
-.logo__web-blue,
-.logo__studio-black {
+.logo__web-part,
+.logo__studio-black-part {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -87,7 +86,7 @@ ol {
   text-decoration: none;
 }
 
-.logo__studio-black {
+.logo__studio-black-part {
   color: var(--studio-logo);
 }
 
@@ -243,7 +242,7 @@ ol {
   margin-right: auto;
 }
 
-.button-posluga {
+.hero__main-button {
   color: var(--white-color);
   background-color: var(--accent-color);
   font-family: 'Roboto';
@@ -262,8 +261,8 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-posluga:hover,
-.button-posluga:focus {
+.hero__main-button:hover,
+.hero__main-button:focus {
   background-color: #188ce8;
 }
 
