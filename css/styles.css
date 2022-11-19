@@ -913,8 +913,6 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe__btn-text {
-}
 .subscribe__icon {
   fill: var(--white-color);
   margin-left: 10px;
