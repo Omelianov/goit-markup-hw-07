@@ -1,0 +1,17 @@
+.logo__web-part,
+.logo__studio-black-part {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.logo__studio-black-part {
+  color: var(--studio-logo);
+}

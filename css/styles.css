@@ -1,8 +1,9 @@
-html {
+/* html {
   box-sizing: border-box;
 }
+*/
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: inherit;
@@ -20,9 +21,9 @@ li,
 ol {
   margin: 0;
   padding: 0;
-}
+} */
 
-:root {
+/* :root {
   --background-color-primary: #fff;
   --background-color-secondary: #f5f4fa;
   --font-family: #757575;
@@ -33,46 +34,42 @@ ol {
   --studio-logo: #000000;
   --background-hero-footer: #2f303a;
   --color-social-media-links: #afb1b8;
-}
+} */
 
-.body {
+/* .body {
   color: var(--font-family);
   font-family: Roboto, sans-serif;
   background-color: var(--background-color-primary);
-}
+} */
 
 /* Утилы */
 
-.list {
+/* .list {
   list-style: none;
-}
+} */
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
-.img {
+/* .img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} */
 
 /* Logo */
 
-.container {
+/* .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
+} */
 
-.main-nav {
+/* .main-nav {
   display: flex;
   align-items: center;
   background-color: var(--background-color-primary);
-}
+} */
 
-.logo__web-part,
+/* .logo__web-part,
 .logo__studio-black-part {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -88,11 +85,11 @@ ol {
 
 .logo__studio-black-part {
   color: var(--studio-logo);
-}
+} */
 
 /* site-nav and auth-nav*/
 
-.main-nav__studia-underline::after {
+/* .main-nav__studia-underline::after {
   content: '';
   position: absolute;
   left: 0;
@@ -119,7 +116,7 @@ ol {
   height: 4px;
   background: var(--accent-color);
   border-radius: 60px;
-}
+} */
 
 /* .link-contacts::after {
   content: '';
@@ -133,7 +130,7 @@ ol {
   border-radius: 60px;
 } */
 
-.main-nav__site-nav {
+/* .main-nav__site-nav {
   display: flex;
   margin-left: 94px;
 }
@@ -204,16 +201,20 @@ ol {
 .auth-nav__link:hover .auth-nav__icon,
 .auth-nav__link:focus .auth-nav__icon {
   fill: var(--accent-color);
-}
+} */
+
+/* .header {
+  border-bottom: 1px solid #ececec;
+} */
 
 /* Section замовити послугу button */
 
-.hero {
+/* .hero {
   background-color: var(--background-hero-footer);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-}
+} */
 
 /* Overlay */
 
@@ -229,7 +230,7 @@ ol {
   background-size: cover;
 }
 
-.hero__title {
+/* .hero__title {
   color: var(--white-color);
   font-family: 'Roboto';
   font-weight: 900;
@@ -264,9 +265,9 @@ ol {
 .hero__main-button:hover,
 .hero__main-button:focus {
   background-color: #188ce8;
-}
+} */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -342,8 +343,8 @@ ol {
   letter-spacing: 0.03em;
 
   color: #212121;
-}
-.contact-form {
+} */
+/* .contact-form {
   margin-top: 12px;
 }
 
@@ -499,11 +500,11 @@ ol {
 .contact-form__button:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
 
 /* <!-- Section особливости --> */
 
-.features {
+/* .features {
   padding-top: 94px;
 }
 
@@ -533,9 +534,9 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -546,9 +547,9 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
 
-.features__subtitle {
+/* .features__subtitle {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -563,11 +564,11 @@ ol {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-}
+} */
 
 /* Section Чим ми займаємося и h2 наша команда */
 
-.section-activities {
+/* .section-activities {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -618,7 +619,7 @@ ol {
   width: 100%;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* Section Наша команда */
 
@@ -715,6 +716,8 @@ ol {
   width: 20px;
   height: 20px;
 }
+
+/* <!-- Постійні клієнти --> */
 
 .section-clients {
   padding-top: 94px;
