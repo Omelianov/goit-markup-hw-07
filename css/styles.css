@@ -218,7 +218,7 @@ ol {
 
 /* Overlay */
 
-.overlay {
+/* .overlay {
   max-width: 1600px;
   min-height: 600px;
   margin-left: auto;
@@ -228,7 +228,7 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
+} */
 
 /* .hero__title {
   color: var(--white-color);
