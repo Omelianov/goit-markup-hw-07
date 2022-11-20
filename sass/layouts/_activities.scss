@@ -12,15 +12,7 @@
 
 .section-activities__title {
   color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
+  @extend %section-title;
 }
 
 .section-activities__item {

@@ -623,7 +623,7 @@ ol {
 
 /* Section Наша команда */
 
-.section-team {
+/* .section-team {
   background-color: var(--background-color-secondary);
   padding-top: 94px;
   padding-bottom: 94px;
@@ -674,9 +674,9 @@ ol {
   text-align: center;
   vertical-align: middle;
   margin-bottom: 16px;
-}
+} */
 
-.socials {
+/* .socials {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -715,11 +715,11 @@ ol {
 .socials__icon {
   width: 20px;
   height: 20px;
-}
+} */
 
 /* <!-- Постійні клієнти --> */
 
-.section-clients {
+/* .section-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -766,11 +766,11 @@ ol {
 
 .section-clients__link:focus {
   fill: var(--accent-color);
-}
+} */
 
 /* Section footer */
 
-.footer {
+/* .footer {
   background-color: var(--background-hero-footer);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -783,13 +783,9 @@ ol {
 
 .footer__footer-left {
   width: 231px;
-}
+} */
 
-.logo {
-  text-decoration-line: none;
-}
-
-.logo__studio-white {
+/* .logo__studio-white {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -797,9 +793,9 @@ ol {
   line-height: 1.19;
   text-decoration: none;
   color: var(--white-color);
-}
+} */
 
-.address {
+/* .address {
   margin-top: 20px;
 }
 
@@ -829,16 +825,16 @@ ol {
   letter-spacing: 0.03em;
   font-style: normal;
   text-decoration: none;
-}
+} */
 
-.footer__footer-right {
+/* .footer__footer-right {
   display: flex;
   flex-direction: column;
   margin-left: 70px;
-}
+} */
 
-.footer__subtitle,
-.subscribe__subtitle {
+/* .footer__subtitle, */
+/* .subscribe__subtitle {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -847,17 +843,17 @@ ol {
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
-}
+} */
 
-.socials--link-footer {
+/* .socials--link-footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .socials__icon--footer {
   fill: var(--white-color);
-}
+} */
 
-.subscribe {
+/* .subscribe {
   margin-left: 92px;
   align-items: center;
 }
@@ -919,7 +915,7 @@ ol {
 .subscribe__icon {
   fill: var(--white-color);
   margin-left: 10px;
-}
+} */
 
 /* Page 2 */
 

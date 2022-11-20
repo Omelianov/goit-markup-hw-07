@@ -4,3 +4,9 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+// section indent mixin
+@mixin section-indent($pt: 94px, $pb: $pt) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
