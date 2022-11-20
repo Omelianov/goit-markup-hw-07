@@ -11,8 +11,8 @@
 }
 
 .section-activities__title {
-  color: var(--title-text-color);
   @extend %section-title;
+  color: var(--title-text-color);
 }
 
 .section-activities__item {
@@ -30,8 +30,7 @@
 }
 
 .section-activities__text {
-  display: flex;
-  font-family: 'Roboto';
+  @extend %flex-centered;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -39,6 +38,5 @@
   text-transform: uppercase;
   color: var(--white-color);
   width: 100%;
-  justify-content: center;
-  align-items: center;
+
 }

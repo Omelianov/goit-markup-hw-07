@@ -7,7 +7,6 @@
 
 .hero__title {
   color: var(--white-color);
-  font-family: 'Roboto';
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -19,11 +18,9 @@
 }
 
 .hero__main-button {
-  @extend %button;  
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+  @extend %button;
+  @include transitions (background-color);  
+  
 &:hover,
 &:focus {
   background-color: #188ce8;

@@ -1,5 +1,5 @@
 .section-team {
-  @include section-indent();  
+  @include section-indent(60px);  
   background-color: var(--background-color-secondary);
   text-align: center;
 }

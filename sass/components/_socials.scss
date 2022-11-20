@@ -11,15 +11,13 @@
 }
 
 .socials__link {
+  @include transitions (background-color, fill);
   @extend %flex-centered;
   fill: var(--color-social-media-links);
   background-color: var(--white-color);
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
   background-color: var(--accent-color);

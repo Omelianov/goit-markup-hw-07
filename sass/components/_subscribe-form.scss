@@ -18,6 +18,7 @@
 }
 
 .subscribe__email {
+  @include transitions (box-shadow, border-color);
   display: inline-block;
   width: 358px;
   padding: 15px 16px;
@@ -26,9 +27,6 @@
   border-radius: 4px;
   background-color: var(--background-hero-footer);
   color: var(--white-color);
-  transition-property: box-shadow, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:focus,
     &:hover {
   outline: none;
@@ -39,6 +37,7 @@
 
 .subscribe__footer-btn {
   position: relative;
+  @include transitions (box-shadow);
   @extend %button;
   @extend %flex-centered;
   background: #2196f3;
@@ -47,9 +46,6 @@
   border-color: transparent;
   letter-spacing: 0.03em;
   margin-top: 0;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:focus,
     &:hover {
   outline: none;

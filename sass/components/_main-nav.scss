@@ -45,7 +45,7 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration-line: none;
-  cursor: pointer;
+  
 }
 
 .auth-nav__icon {
@@ -72,9 +72,8 @@
 .main-nav__link,
 .auth-nav__link,
 .auth-nav__icon {
-  transition-property: color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transitions (color, fill);
+  
 &:hover,
 &:focus,
 &:hover,
