@@ -1,59 +1,3 @@
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.body {
-  color: var(--font-family);
-  font-family: Roboto, sans-serif;
-  background-color: var(--background-color-primary);
-}
-
-.list {
-  list-style: none;
-}
-
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: currentColor;
-}
-
-ul,
-ol {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
-}
-
 /**
  * Minified by jsDelivr using clean-css v4.2.3.
  * Original file: /npm/modern-normalize@1.1.0/modern-normalize.css
@@ -208,6 +152,7 @@ summary {
   --font-family: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --active-color: #188ce8;
   --white-color: #ffffff;
   --white-color-60: rgba(255, 255, 255, 0.6);
   --studio-logo: #000000;
@@ -215,6 +160,36 @@ summary {
   --color-social-media-links: #afb1b8;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/roboto-v30-latin_cyrillic-regular.ttf) format("ttf"), url(/fonts/roboto-v30-latin_cyrillic-regular.woff) format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/roboto-v30-latin_cyrillic-500.ttf) format("ttf"), url(/fonts/roboto-v30-latin_cyrillic-500.woff) format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/roboto-v30-latin_cyrillic-700.ttf) format("ttf"), url(/fonts/roboto-v30-latin_cyrillic-700.woff) format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/roboto-v30-latin_cyrillic-900.ttf) format("ttf"), url(/fonts/roboto-v30-latin_cyrillic-900.woff) format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: Raleway;
+  src: url(/fonts/raleway-v28-latin-700.ttf) format("ttf"), url(/fonts/raleway-v28-latin-700.woff) format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
 .main-nav__portfolio-underline::after, .main-nav__studia-underline::after {
   content: "";
   position: absolute;
@@ -287,6 +262,62 @@ summary {
   margin: -1px;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body {
+  color: var(--font-family);
+  background-color: var(--background-color-primary);
+  font-family: Roboto, sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
 .hero {
   background-color: var(--background-hero-footer);
   padding-top: 200px;
@@ -315,7 +346,7 @@ summary {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__main-button:hover, .hero__main-button:focus {
-  background-color: #188ce8;
+  background-color: var(--active-color);
 }
 
 .features {
@@ -577,7 +608,7 @@ summary {
 .logo__studio-black-part,
 .logo__studio-white {
   color: var(--accent-color);
-  font-family: Raleway, sans-serif;
+  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -774,7 +805,7 @@ summary {
   cursor: pointer;
 }
 .modal__close-btn:focus, .modal__close-btn:hover {
-  fill: var(--accent-color);
+  fill: var(--active-color);
 }
 
 .modal__form {
@@ -834,7 +865,7 @@ summary {
 .contact-form__email:focus,
 .contact-form__email:focus {
   outline: none;
-  border-color: var(--accent-color);
+  border-color: var(--active-color);
 }
 
 .contact-form__comments {
@@ -853,7 +884,7 @@ summary {
 }
 .contact-form__comments:focus {
   outline: none;
-  border-color: var(--accent-color);
+  border-color: var(--active-color);
 }
 .contact-form__comments::-webkit-input-placeholder {
   -webkit-transition-property: color;
@@ -911,23 +942,23 @@ summary {
 }
 
 .contact-form__comments:focus::-webkit-input-placeholder {
-  color: var(--accent-color);
+  color: var(--active-color);
 }
 
 .contact-form__comments:focus::-moz-placeholder {
-  color: var(--accent-color);
+  color: var(--active-color);
 }
 
 .contact-form__comments:focus:-ms-input-placeholder {
-  color: var(--accent-color);
+  color: var(--active-color);
 }
 
 .contact-form__comments:focus::-ms-input-placeholder {
-  color: var(--accent-color);
+  color: var(--active-color);
 }
 
 .contact-form__comments:focus::placeholder {
-  color: var(--accent-color);
+  color: var(--active-color);
 }
 
 .contact-form__icon {
@@ -999,12 +1030,12 @@ summary {
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: var(--accent-color);
+  color: var(--active-color);
   margin-left: 7px;
 }
 
 .contact-form__name + .modal__close-icon:hover {
-  fill: var(--accent-color);
+  fill: var(--active-color);
 }
 
 .contact-form__button {
@@ -1018,9 +1049,16 @@ summary {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: auto;
   margin-right: auto;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .contact-form__button:focus {
-  background-color: #188ce8;
+  background-color: var(--active-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.contact-form__button:hover {
+  background-color: var(--active-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
